@@ -1,0 +1,240 @@
+/* ── Reset & Base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --text:    #1a1a1a;
+  --muted:   #6b6b6b;
+  --border:  #e4e4e4;
+  --bg:      #ffffff;
+  --accent:  #1a1a1a;
+  --max-w:   720px;
+}
+
+html { font-size: 16px; }
+
+body {
+  font-family: "Georgia", serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Layout ── */
+.site-header {
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
+  padding: 0 2rem;
+}
+
+.header-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+}
+
+.site-name {
+  font-family: "Georgia", serif;
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  color: var(--text);
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--muted);
+  transition: color 0.15s;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--text);
+}
+
+main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 4rem 2rem 6rem;
+}
+
+/* ── Typography ── */
+h1 {
+  font-family: "Georgia", serif;
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 1.3;
+  margin-bottom: 0.25rem;
+}
+
+h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 3rem 0 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+p {
+  margin-bottom: 1.1rem;
+  font-size: 1rem;
+}
+
+a {
+  color: var(--text);
+}
+
+/* ── About page ── */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 3rem;
+  align-items: start;
+  margin-top: 2.5rem;
+}
+
+.about-photo {
+  width: 100%;
+  max-width: 200px;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: top;
+  filter: grayscale(10%);
+}
+
+.about-text .title {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+/* ── Contact block ── */
+.contact-block {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.contact-block a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+}
+
+.contact-block a:hover {
+  border-bottom-color: var(--text);
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+/* ── Research page ── */
+.research-area {
+  margin-bottom: 2.5rem;
+}
+
+.research-area h3 {
+  font-family: "Georgia", serif;
+  font-size: 1.05rem;
+  font-weight: normal;
+  margin-bottom: 0.6rem;
+}
+
+/* ── Publications page ── */
+.pub-list {
+  list-style: none;
+}
+
+.pub-item {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.pub-item:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.pub-title {
+  font-family: "Georgia", serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.3rem;
+}
+
+.pub-title a {
+  text-decoration: none;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  transition: border-color 0.15s;
+}
+
+.pub-title a:hover {
+  border-bottom-color: var(--text);
+}
+
+.pub-meta {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.pub-year {
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--muted);
+  margin-right: 0.5rem;
+}
+
+/* ── Footer ── */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 2rem;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-photo {
+    max-width: 160px;
+    order: -1;
+  }
+  nav { gap: 1.2rem; }
+  h1 { font-size: 1.6rem; }
+}

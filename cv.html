@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV – Hilma C. Lindskog</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .cv-download {
+      display: inline-block;
+      margin: 2rem 0 3rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--text);
+      border-bottom: 1px solid var(--text);
+      padding-bottom: 2px;
+      transition: opacity 0.15s;
+    }
+    .cv-download:hover { opacity: 0.5; }
+
+    .cv-section { margin-bottom: 2.5rem; }
+
+    .cv-entry {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      gap: 0 1.5rem;
+      padding: 0.8rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.95rem;
+    }
+    .cv-entry:first-of-type { border-top: 1px solid var(--border); }
+
+    .cv-year {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 0.8rem;
+      color: var(--muted);
+      padding-top: 0.15rem;
+    }
+
+    .cv-desc strong {
+      font-weight: normal;
+      font-style: italic;
+    }
+
+    .cv-desc .institution {
+      display: block;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 0.15rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-name" href="index.html">Hilma C. Lindskog</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html" class="active">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Curriculum Vitae</h1>
+
+    <a
+      class="cv-download"
+      href="https://www.gu.se/sites/default/files/pop_assets/d8754f86-6d45-4643-8b32-f2ddfc127863-resume.pdf"
+      target="_blank"
+      rel="noopener"
+    >
+      Download full CV (PDF) ↓
+    </a>
+
+    <div class="cv-section">
+      <h2>Positions</h2>
+
+      <div class="cv-entry">
+        <div class="cv-year">2022–</div>
+        <div class="cv-desc">
+          PhD Candidate
+          <span class="institution">Department of Political Science, University of Gothenburg</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-section">
+      <h2>Education</h2>
+
+      <div class="cv-entry">
+        <div class="cv-year">2022–</div>
+        <div class="cv-desc">
+          PhD in Political Science
+          <span class="institution">University of Gothenburg</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-section">
+      <h2>Teaching</h2>
+
+      <div class="cv-entry">
+        <div class="cv-year">2022–</div>
+        <div class="cv-desc">
+          <em>Institutions and Actors in Democracies</em>
+          <span class="institution">University of Gothenburg</span>
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <div class="cv-year">2022–</div>
+        <div class="cv-desc">
+          Thesis supervision, bachelor and master level
+          <span class="institution">University of Gothenburg</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-section">
+      <h2>Selected Publications</h2>
+
+      <div class="cv-entry">
+        <div class="cv-year">2025</div>
+        <div class="cv-desc">
+          Does Peer Socialization Within Cohorts Foster Political Attitudes?
+          <span class="institution"><em>Political Behavior</em> (with N. Gustafsson &amp; S. Voytiv)</span>
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <div class="cv-year">2024</div>
+        <div class="cv-desc">
+          The Voter Next Door: Stigma Effects on Advance Voting for Radical Right Parties
+          <span class="institution"><em>Political Studies</em> (with S. Dahlberg, R. Öhrvall &amp; H. Oscarsson)</span>
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <div class="cv-year">2023</div>
+        <div class="cv-desc">
+          Generational differences in disguise? A longitudinal study of the liberalising effect of education
+          <span class="institution"><em>West European Politics</em> (with M. Oskarson)</span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    &copy; 2026 Hilma C. Lindskog
+  </footer>
+
+</body>
+</html>
